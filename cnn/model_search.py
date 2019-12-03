@@ -45,7 +45,7 @@ class Cell(nn.Module):
         self._ops.append(op)
 
   def forward(self, s0, s1, weights):
-    s0 = self.preprocess0(s0)
+    s0 = self.preprocess0(s1)
     s1 = self.preprocess1(s1)
 
     states = [s0, s1]
