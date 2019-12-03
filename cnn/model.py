@@ -39,7 +39,7 @@ class Cell(nn.Module):
     self._indices = indices
 
   def forward(self, s0, s1, drop_prob):
-    s0 = self.preprocess0(s0)
+    s0 = self.preprocess0(s1)
     s1 = self.preprocess1(s1)
 
     states = [s0, s1]
